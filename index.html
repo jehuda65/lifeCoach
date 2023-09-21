@@ -7,8 +7,31 @@
     <title>Suzi Wine</title>
   </head>
 
-  <body class="bg-black pt-8">
+  <body class="pt-8 bg-orange-200">
     <div class="flex place-content-around">
+      <div>
+        <button
+        type="button"
+        class="relative inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-purple-700 hover:text-yellow-300 "
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <span class="absolute -inset-0.5"></span>
+        <span class="sr-only">Open main menu</span>
+        <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+      </div>
       <div>
         <h1 class="text-3xl font-bold text-orange-600">
           Suzi Wine - Life Coach
@@ -17,13 +40,19 @@
       <div>
         <img class="h-10 hover:opacity-80" src="/images/logo.png" alt="" />
       </div>
-      <div class="text-xl text-purple-700 hover:text-purple-900">
+      <div
+        class="hidden md:block text-xl text-purple-700 hover:text-purple-900"
+      >
         <a href="/indexTest.html">About Me</a>
       </div>
-      <div class="text-xl text-purple-700 hover:text-purple-900">
+      <div
+        class="hidden md:block text-xl text-purple-700 hover:text-purple-900"
+      >
         <a href="#">How It Works</a>
       </div>
-      <div class="text-xl text-purple-700 hover:text-purple-900">
+      <div
+        class="hidden md:block text-xl text-purple-700 hover:text-purple-900"
+      >
         <a href="#">Contact</a>
       </div>
     </div>
