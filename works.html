@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How it works</title>
+    <title>How it Works</title>
     <link href="/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/base_icon_transparent_background.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"
     />
+    
   </head>
-  <body class="pt-8 bg-orange-200 font-raleway">
-        <div class="flex place-content-around h-10 bg-orange-200">
+  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway">
+       
+    <div class="flex place-content-around h-24 bg-orange-50 md:bg-opacity-40 backdrop-blur-sm pt-8 md:fixed w-full top-0 md:pr-5 shadow-md">
+         
           <div>
             <button
             type="button"
@@ -36,32 +38,109 @@
                       stroke-linejoin="round"
                       d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                     />
+                  </svg>
           </div>
-          <div >
-            <h1 class="text-3xl font-bold text-orange-600">
-              Suzi Wine - Life Coach
-            </h1>
+        
+            <div>
+              <h1 class="translate-y-1 md:text-3xl font-bold font-croissant text-orange-600">
+                Suzi Wine: Life Coach
+              </h1>
+            </div>
+            <div>
+              <a href="/index.html">
+              <img class="h-20 -translate-y-6 hover:opacity-80" src="/images/logo.png" alt="" />
+            </a>
+            </div>
+            <div
+              class="hidden text-lg md:block text-purple-900 border-b border-purple-800 h-8"
+            >
+              <a href="/about.html">About Me</a>
+            </div>
+            <div
+              class="hidden text-lg md:block text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 h-8"
+            >
+              <a href="/works.html">How It Works</a>
+            </div>
+            <div
+              class="hidden text-lg md:block text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 h-8"
+            >
+              <a href="#">Contact</a>
+            </div>
           </div>
+          <!-- Discovery call -->
           <div>
-            <a href="/index.html">
-            <img class="h-20 -translate-y-6 hover:opacity-80" src="/images/logo.png" alt="" />
-          </a>
+              <div class="bg-purple-700 px-8 py-6 md:mt-24 md:py-16 md:px-32 text-white">
+                  <p class="font-croissant pb-10 text-center text-2xl md:text-3xl">Starting off - Free Discovery Call</p>
+                  <p>This is a chance for us to meet and for you to broach what is on your mind.  This is a casual 
+                    conversation, where we can find a little bit more about each other and decide if we connect and 
+                    want to move forward.
+                    </p><br>
+                    <p> There is no fee and no obligation.  The call is roughly 20 - 30 minutes and we also outline 
+                      what to expect, how often you would like your sessions to be and when.</p>
+                      
+                </div>
           </div>
-          <div
-            class="hidden md:block text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
-          >
-            <a href="/about.html">About Me</a>
+       
+          <!-- Session structure -->
+          <div class="bg-orange-100 px-16 py-10 md:px-32 md:py-20 ">
+              <p class="font-croissant text-2xl md:text-3xl text-orange-500 text-center pb-10">The Sessions</p>
+              <ul class="list-disc">
+                <li class="pb-4 font-bold text-lg">
+                  6 session basis
+                </li>
+                <p>One session is usually not enough to fully explore and develop a 
+                  transformative change.  This kind of change takes time and patience.</p>
+                <li class="py-4 font-bold text-lg">
+                  One off session
+                </li>
+                <p>This can be useful when you have something less challenging and 
+                  more immediate to talk through.  It can be very powerful and dynamic for specific issues.</p>
+              </ul>
+              <br>
+              <p class="font-croissant text-xl text-orange-500 pb-4 text-center">Agreement & questionnaire</p>
+              <p>Before we agree to the sessions I will provide a client / coach agreement which exists to 
+                safeguard both the client and the coach and enable you to see how your needs are important 
+                and I will hold boundaries for you.</p>
+                <p class="font-semibold text-purple-700">Click <a href="/assets/Coaching Agreement.pdf" download>HERE</a> to download the agreement form</p><br>
+                <p>I will also send you a client questionnaire which will help me understand a little bit 
+                  more about what you hope to get out of the coaching and will clarify certain aspects of 
+                  the coaching experience for you too.</p>
+                  <p class="font-semibold text-purple-700">Click HERE to see the questionnaire</p>
           </div>
-          <div
-            class="hidden md:block text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
-          >
-            <a href="./works.html">How It Works</a>
+
+          <!-- Fees section -->
+          <div class="bg-white py-10 px-8 md:py-20 md:px-32">
+            <p class="font-croissant text-2xl md:text-3xl text-center pb-6">Fees</p>
+            <p class="text-center font-semibold">These are the fees that I charge:</p><br>
+            <div class=" flex flex-col">
+            <p>First exploratory Discovery call FREE</p>
+            <p>Subsequent sessions - £45 </p>
+            <p>VOlume discount: Book six sessions - £300.</p>
           </div>
-          <div
-            class="hidden md:block text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
-          >
-            <a href="#">Contact</a>
           </div>
+
+      
+       
+
+        <div class="w-screen bg-purple-700 py-10 text-center text-white" id="contact">
+          <div class="flex flex-col md:flex-row font-croissant justify-center space-y-4 md:space-y-0 md:space-x-[20%]">
+              <div class="font-raleway md:text-left">
+                <p class="font-croissant text-xl text-yellow-400 pb-4">Location</p>
+                <p>1 Main Street</p>
+                <p>Gibraltar</p>
+              </div>
+    
+              <div class="font-raleway md:text-left">
+                <p class="font-croissant text-xl text-yellow-400 pb-4">Contact</p>
+                <p>Email:</p>
+                <p>Phone:</p>
+              </div>
+    
+              <div class="font-raleway md:text-left">
+                <img class="h-16 mx-auto " src="images/AnimasLogo.jpeg" alt="">
+              </div>
+          </div> 
         </div>
+
   </body>
 </html>

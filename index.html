@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/index.css" rel="stylesheet" />
     <title>Suzi Wine</title>
+    <link rel="shortcut icon" href="images/base_icon_transparent_background.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
 
-  <body class="pt-8 bg-orange-200 font-raleway">
-    <div class="flex place-content-around h-10 bg-orange-200">
+  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway pr-10 overflow-x-hidden md:pt-28">
+    <div class="w-screen pt-8 flex place-content-around items-center bg-orange-100 md:bg-white md:bg-opacity-40 backdrop-blur-sm bg-blur relative md:fixed top-0 md:w-full md:z-40 shadow-md">
       <div>
         <button
         type="button"
-        class="menu-toggle relative inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-purple-700 hover:text-yellow-300 md:hidden active:rotate-90 transition-transform duration-300"
+        class="menu-toggle relative -translate-y-4 inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-purple-700 hover:bg-opacity-50 hover:text-white md:hidden active:rotate-90 transition-transform duration-300"
         aria-controls="mobile-menu"
         aria-expanded="false"
       >
@@ -33,34 +34,34 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-      </div>
+                /></svg>
+        </div>
       <div >
-        <h1 class="text-3xl font-bold text-orange-600">
+        <h1 class="text-xl md:text-3xl -translate-y-4 font-bold text-orange-600 font-croissant">
           Suzi Wine - Life Coach
         </h1>
       </div>
       <div>
-        <img class="h-20 -translate-y-6 hover:opacity-80" src="/images/logo.png" alt="" />
+        <img class="h-20 -translate-y-4 hover:opacity-80" src="/images/logo.png" alt="" />
       </div>
       <div
-        class="hidden md:block text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
+        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
       >
         <a href="/about.html">About Me</a>
       </div>
       <div
-        class="hidden md:block text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
+        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
       >
         <a href="/works.html">How It Works</a>
       </div>
       <div
-        class="hidden md:block text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
+        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
       >
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
 
-    <div class="flex min-h-full max-w-xs bg-purple-700 text-yellow-300 py-4 sm:hidden">
+    <!-- <div class="flex min-h-full max-w-xs bg-purple-700 text-yellow-300 py-4 sm:hidden">
       <aside class="sidebar flex flex-grow flex-shrink flex-col">
         <h3 class="text-sm mb-3 px-4 text-purple-950">Menu</h3>
         <nav class="flex flex-col -my-4">
@@ -69,12 +70,12 @@
           <a class="p-4 transition hover:border-r-4 border-yellow-300" href="#">Contact</a>
         </nav>
       </aside>
-    </div>
+    </div> -->
 
-    <div class="md:m-10 md:align-middle p-10 bg-orange-300 rounded-sm">
+    <div class="w-screen md:w-fit md:m-10 md:align-middle md:p-10 bg-orange-300 rounded-sm z-0">
       <div class="md:flex flex-wrap">
-        <div class="w-screen md:w-2/3 p-10 pr-36 font-raleway flex flex-col space-y-6 ">
-        <p class="font-bold text-xl text-purple-800 ">Do you sometimes look around you and ask yourself <em>“How did I get here?”, “What am I doing”,  “Why do I feel this way?”</em></p>
+        <div class="w-screen md:w-2/3 p-6 pt-10 md:p-10 md:pr-36 font-raleway flex flex-col space-y-6 ">
+        <p class="font-bold text-2xl text-purple-800">Do you sometimes look around you and ask yourself <em>“How did I get here?”, “What am I doing”,  “Why do I feel this way?”</em></p>
         <p>
           As we journey through life, we change and develop, our work and family dynamic is constantly evolving.  We are not the same 
           person we were 10 or 20 years ago. Coaching can help you navigate this with a deeper understanding of yourself and help you 
@@ -101,9 +102,9 @@
   <p><em>“When someone really hears you without passing judgment on you, without trying to take responsibility for you, without 
     trying to mould you, it feels damn good…”<br><span class="text-sm">- Carl Rogers</span></em></p>
 </div>
-<div class="bg-orange-100 p-6 md:py-20">
-  <div class="md:mx-10 py-20 p-16 border-2 border-dashed border-purple-700 rounded font-raleway">
-    <p class="font-bold text-orange-600 text-2xl text-center">My style of coaching</p>
+<div class="w-screen bg-orange-100 p-4 md:p-6 md:py-20">
+  <div class="md:mx-10 md:py-20 p-8 md:p-16 border-2 border-dashed border-purple-700 rounded font-raleway">
+    <p class="font-bold text-orange-600 text-2xl text-center font-croissant">My style of coaching</p>
     <br>
       
         <div class="leading-7">
@@ -119,10 +120,10 @@
   </div>
 </div>
 
-  <div class="m-10 my-20 md:m-32">
-    <p class="font-bold text-lg text-purple-700 md:text-2xl text-center">Coaching you to make Transformative Change with… <br><br>
+  <div class="m-6 my-20 md:m-32 ">
+    <p class="font-bold text-lg text-purple-700 md:text-2xl text-center font-croissant">Coaching you to make Transformative Change with… <br><br>
       <ul class="list-disc text-center">
-        <div class="flex justify-center mx-10 flex-col md:flex-row md:space-x-32 text-left">
+        <div class="flex justify-center ml-20 md:ml-0 flex-col md:flex-row md:space-x-32 text-left">
           <div>
           <li>Relationships</li>
           <li>Children/Teens</li>
@@ -140,16 +141,24 @@
       </p>
     </div>
     
-    <div class="bg-purple-700 py-10 text-center text-white">
-      <h1 class="pb-10 text-lg">Contact</h1>
-      <div class="flex space-x-10 justify-center">
-      <p>Phone:</p>
-      <p>Email:</p>
-     </div>
-      <div class="flex space-x-10 justify-center">
-      <p>+32 12312 341 234</p>
-      <p>@gmail.com </p>
-     </div>
+    <div class="w-screen bg-purple-700 py-10 text-center text-white" id="contact">
+      <div class="flex flex-col md:flex-row font-croissant justify-center space-y-4 md:space-y-0 md:space-x-[20%]">
+          <div class="font-raleway md:text-left">
+            <p class="font-croissant text-xl text-yellow-400 pb-4">Location</p>
+            <p>1 Main Street</p>
+            <p>Gibraltar</p>
+          </div>
+
+          <div class="font-raleway md:text-left">
+            <p class="font-croissant text-xl text-yellow-400 pb-4">Contact</p>
+            <p>Email:</p>
+            <p>Phone:</p>
+          </div>
+
+          <div class="font-raleway md:text-left">
+            <img class="h-16 mx-auto " src="images/AnimasLogo.jpeg" alt="">
+          </div>
+      </div> 
     </div>
 
 

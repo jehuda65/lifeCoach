@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
     <link href="/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/base_icon_transparent_background.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500;1,600&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"
     />
+    
   </head>
-  <body class="pt-8 bg-orange-200 font-raleway">
-        <div class="flex place-content-around h-10 bg-orange-200">
+  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway">
+       
+    <div class="flex place-content-around h-24 bg-orange-50 md:bg-opacity-40 backdrop-blur-sm pt-8 md:fixed w-full top-0 md:pr-5 shadow-md">
+         
           <div>
             <button
             type="button"
@@ -36,10 +38,12 @@
                       stroke-linejoin="round"
                       d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                     />
+                  </svg>
           </div>
-          <div >
-            <h1 class="text-3xl font-bold text-orange-600">
-              Suzi Wine - Life Coach
+        
+          <div>
+            <h1 class="translate-y-1 md:text-3xl font-bold font-croissant text-orange-600">
+              Suzi Wine: Life Coach
             </h1>
           </div>
           <div>
@@ -48,38 +52,124 @@
           </a>
           </div>
           <div
-            class="hidden text-lg md:block text-purple-900 border-b border-purple-800"
+            class="hidden text-lg md:block text-purple-900 border-b border-purple-800 h-8"
           >
             <a href="/about.html">About Me</a>
           </div>
           <div
-            class="hidden text-lg md:block text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
+            class="hidden text-lg md:block text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 h-8"
           >
             <a href="/works.html">How It Works</a>
           </div>
           <div
-            class="hidden text-lg md:block text-purple-700 hover:text-purple-900 hover:border-b border-purple-800"
+            class="hidden text-lg md:block text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 h-8"
           >
             <a href="#">Contact</a>
           </div>
-        </div>
+    </div>
 
-        <div class="m-10 md:mx-32">
-          <div class="flex flex-col-reverse md:flex-row ">
-            <div class="bg-white px-10">
-              <p>Suzi Wine</p>
+        <div>
+          <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:mt-20 md:py-20 md:mx-32">
+            <div class="md:w-3/5">
+              <img class="shadow-lg" src="/images/therapist.jpg" alt="">
+            </div>
+          
+            <div class="md:bg-orange-300 font-semibold md:w-3/5 md:px-10 md:py-6 m-10 md:m-0">
+              <p class="font-croissant text-xl text-center text-orange-600">Suzi Wine</p><br>
               <p>
                 I am a trained Coach with the Animas School of Transformative Coaching and a Member of the International 
                 Coaching Federation (ICF). I also work according to the ICF Code of Ethics, details of which can be found 
                 on the ICF website.  I have completed many hours of training and coached clients from young adults to those 
                 going through midlife career changes or other challenges.
-
               </p>
             </div>
-            <div><img src="/images/therapist.jpg" alt=""></div>
-          </div>
+           </div>
         </div>
+       
+        <div>
+          <div class="flex flex-col md:flex-row space-y-5 md:space-y-0  m-10 md:py-10 md:mx-32">
+            <div class="md:w-3/5">
+              <img class="shadow-lg" src="/images/gym.jpg" alt="">
+            </div>
+          
+            <div class="md:bg-orange-300 font-semibold md:w-3/5 md:px-10 md:py-20">
+              <!-- <p>Suzi Wine</p> -->
+              <p class="font-croissant text-xl text-center text-purple-700">Personal Trainer</p><br>
+              <p>
+                As a qualified Personal Trainer I have used my knowledge of functional training, exercise and nutrition to 
+                inform my work as a coach in areas of self esteem, health and wellbeing.  
+              </p>
+            </div>
+           </div>
+        </div>
+        
+        <div>
+          <div class="bg-orange-100  p-10 md:py-10 md:px-32">
+            
+          
+            <div class="md:bg-opacity-20 font-semibold  md:px-10 md:py-20">
+              <!-- <p>Suzi Wine</p> -->
+              <p class="font-croissant text-xl md:text-3xl text-center text-purple-700">What they Say</p><br>
+              
+              <div class="flex flex-col lg:flex-row space-y-5 md:space-y-0 md:space-x-20 pt-10 text-sm md:text-base">
+              
+              <div class="md:ml-20 lg:ml-0">
+                <p class="font-croissant text-right text-orange-600 pb-6">Mahesh</p>
+              <p><em><span class="font-croissant text-xl text-center text-orange-600">" </span>
+                Suzi's style of coaching is warm, friendly and always with a smile. She made me think quite deeply 
+                and help me re-frame areas of negativity and doubts that really needed it.
+                Overall, I feel much much better and positive about the future now and I am genuinely grateful for 
+                the experience. Wow who would have thought a complete stranger could have done this!
+                <span class="font-croissant text-xl text-center text-orange-600">" </span>
+              </em></p>
+            </div>
+            <br>
+              <hr class="lg:hidden w-3/5 mx-auto border-purple-700">
+              <div >
+              <p class="font-croissant text-right text-orange-600 pb-6">Aliza</p>
+              <p><em><span class="font-croissant text-xl text-center text-orange-600">" </span>
+                Suzi made me feel very comfortable and gave me the platform to speak in a non-judgemental way. 
+                She listened and reflected and validated my feelings and gave me the opportunity to work things 
+                out for myself. I would definitely have further sessions with Suzi in the future
+                <span class="font-croissant text-xl text-center text-orange-600">" </span>
+              </em></p><br>
+            </div>
+              <hr class="lg:hidden w-3/5 mx-auto border-purple-700">
+              <div>
+              <p class="font-croissant text-right text-orange-600 pb-6">Diane</p>
+              <p><em><span class="font-croissant text-xl text-center text-orange-600">" </span>
+                "I've found working with Suzi deeply helpful. Rather than only looking at the past, I found 
+                myself unlocking emotional and practical blocks to finding solutions. I became able to pave the 
+                way to create real change and left her services feeling more sure about strategies ahead. I felt 
+                hopeful and saw results".
+                <span class="font-croissant text-xl text-center text-orange-600">" </span>
+              </em></p><br>
+            </div>
+            </div>
+            </div>
+           </div>
+        </div>
+       
 
+        <div class="w-screen bg-purple-700 py-10 text-center text-white" id="contact">
+          <div class="flex flex-col md:flex-row font-croissant justify-center space-y-4 md:space-y-0 md:space-x-[20%]">
+              <div class="font-raleway md:text-left">
+                <p class="font-croissant text-xl text-yellow-400 pb-4">Location</p>
+                <p>1 Main Street</p>
+                <p>Gibraltar</p>
+              </div>
+    
+              <div class="font-raleway md:text-left">
+                <p class="font-croissant text-xl text-yellow-400 pb-4">Contact</p>
+                <p>Email:</p>
+                <p>Phone:</p>
+              </div>
+    
+              <div class="font-raleway md:text-left">
+                <img class="h-16 mx-auto " src="images/AnimasLogo.jpeg" alt="">
+              </div>
+          </div> 
+        </div>
 
   </body>
 </html>
