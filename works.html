@@ -12,34 +12,23 @@
     />
     
   </head>
-  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway">
+  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway overflow-x-hidden">
        
     <div class="w-screen pt-8 flex place-content-around items-center bg-orange-100 md:bg-white md:bg-opacity-40 backdrop-blur-sm bg-blur relative md:fixed top-0 md:w-full md:z-40 shadow-md">
       <div>
         <button
-        type="button"
-        class="menu-toggle relative -translate-y-4 inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-purple-700 hover:bg-opacity-50 hover:text-white md:hidden active:rotate-90 transition-transform duration-300"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-      >
-        <span class="absolute -inset-0.5"></span>
+        class="relative -translate-y-5 inline-flex items-center justify-center rounded-md hover:bg-orange-600 hover:bg-opacity-50 md:hidden"
+       >
+       
         <span class="sr-only">Open main menu</span>
-        <svg
-                class="block h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                /></svg>
+        <span class="absolute text-white text-4xl  cursor-pointer lg:hidden" onclick="Open()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list p-1 cursor-pointer text-orange-600 hover:text-white hover:bg-orange-400 transition-colors rounded" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </span>
         </div>
       <div >
-        <h1 class="text-xl md:text-3xl -translate-y-4 font-bold text-orange-600 font-croissant">
+        <h1 class="text-xl md:text-lg lg:text-3xl -translate-y-4 font-bold text-orange-600 font-croissant">
           Suzi Wine - Life Coach
         </h1>
       </div>
@@ -49,24 +38,51 @@
         </a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
       >
         <a href="/about.html">About Me</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
       >
         <a href="/works.html">How It Works</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
       >
         <a href="#contactWork">Contact</a>
       </div>
+      <div
+        class="hidden md:block -translate-y-4 text-lg text-orange-600 hover:text-orange-600 border-2 px-3 py-1 rounded-sm bg-white bg-opacity-40  hover:bg-orange-300 hover:transition-colors border-orange-400 font-croissant active:bg-orange-600 active:bg-opacity-40 active:duration-300"
+      >
+        <a href=tel:34711001547>Call Me</a>
+      </div>
+    </div>
+
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center bg-fuchsia-900 lg:hidden shadow-lg shadow-black">
+      <div class="text-gray-100 text-xl">
+        <div class="p-2.5 mt-1 flex items-center">
+          
+         
+          <h3 class="text-sm font-bold text-orange-400 ml-3">Menu</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-orange-400 ml-44 cursor-pointer" viewBox="0 0 16 16" onclick="Open()">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </div>
+        <hr class="my-2 border-orange-400">
+      </div>
+      
+      <nav class=" mt-3 flex flex-col text-left rounded duration-300 font-semibold text-yellow-300">
+        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/index.html">Home</a>
+        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/about.html">About Me</a>
+        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/works.html">How it works</a>
+        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="#contactWork">Contact</a>
+        <a href="tel:34711001547" class="p-4 transition hover:bg-yellow-300 hover:text-fuchsia-900 mr-40 rounded">Call Me</a>
+      </nav>
     </div>
           <!-- Discovery call -->
           <div>
-              <div class="bg-purple-700 px-8 py-6 md:mt-28 md:py-16 md:px-32 text-white">
+              <div class="bg-fuchsia-900 px-8 py-6 md:mt-28 md:py-16 md:px-32 text-white">
                   <p class="font-croissant pb-10 text-center text-2xl md:text-3xl">Starting off - Free Discovery Call</p>
                   <p>This is a chance for us to meet and for you to broach what is on your mind.  This is a casual 
                     conversation, where we can find a little bit more about each other and decide if we connect and 
@@ -75,14 +91,14 @@
                     <p> There is no fee and no obligation.  The call is roughly 20 - 30 minutes and we also outline 
                       what to expect, how often you would like your sessions to be and when.</p>
                       <div class="text-center py-4">
-                      <a href=tel:34711001547><button class="bg-white bg-opacity-20 border-2 border-purple-600 font-bold px-4 py-2 md:mt-4 rounded-sm shadow-lg hover:bg-opacity-40 hover:transition-colors active:shadow-none active:translate-y-[1px] active:bg-opacity-50">Book a session</button></a>
+                      <a href=tel:34711001547><button class="bg-white bg-opacity-20 border-2 border-fuchsia-800 font-bold px-4 py-2 md:mt-4 rounded-sm shadow-lg hover:bg-opacity-40 hover:transition-colors active:shadow-none active:translate-y-[1px] active:bg-opacity-50">Book a session</button></a>
                     </div>
                 </div>
           </div>
        
           <!-- Session structure -->
           <div class="bg-none px-16 py-10 md:px-32 md:py-20 ">
-              <p class="font-croissant text-2xl md:text-3xl  text-center pb-10">The Sessions</p>
+              <p class="font-croissant text-2xl md:text-3xl text-fuchsia-800 text-center pb-10">The Sessions</p>
               <ul class="list-disc">
                 <li class="pb-4 font-bold text-lg">
                   6 session basis
@@ -96,51 +112,52 @@
                   more immediate to talk through.  It can be very powerful and dynamic for specific issues.</p>
               </ul>
               <br>
-              <p class="font-croissant text-xl  pb-4 text-center">Agreement & questionnaire</p>
+              <p class="font-croissant text-xl  pb-4 text-center text-fuchsia-800">Agreement & questionnaire</p>
               <p>Before we agree to the sessions I will provide a client / coach agreement which exists to 
                 safeguard both the client and the coach and enable you to see how your needs are important 
                 and I will hold boundaries for you.</p>
-                <p class="font-semibold text-purple-700">Click <a href="/assets/Coaching Agreement.pdf" download>HERE</a> to download the agreement form</p><br>
+                <p class="font-semibold text-fuchsia-800">Click <a href="/assets/Coaching Agreement.pdf" download>HERE</a> to download the agreement form</p><br>
                 <p>I will also send you a client questionnaire which will help me understand a little bit 
                   more about what you hope to get out of the coaching and will clarify certain aspects of 
                   the coaching experience for you too.</p>
-                  <p class="font-semibold text-purple-700">Click HERE to see the questionnaire</p>
+                  <p class="font-semibold text-fuchsia-800">Click HERE to see the questionnaire</p>
           </div>
 
           <!-- Fees section -->
           <div class="bg-white py-10 px-8 md:py-20 md:px-32 md:m-16 md:rounded">
-            <p class="font-croissant text-2xl md:text-3xl text-center pb-6 text-purple-700">Fees</p>
+            <p class="font-croissant text-2xl md:text-3xl text-center pb-6 text-fuchsia-800">Fees</p>
             <p class="text-center font-semibold">These are the fees that I charge:</p><br>
             <div class="flex flex-col space-y-4 md:text-right md:mr-[30%]">
-            <p>First exploratory Discovery call - <span class="font-bold text-purple-700">FREE</span></p>
-            <p>Subsequent sessions - <span class="font-bold text-purple-700">£45</span></p>
-            <p>Volume discount: Book six sessions - <span class="font-bold text-purple-700">£300</span></p>
+            <p>First exploratory Discovery call - <span class="font-bold text-fuchsia-800">FREE</span></p>
+            <p>Subsequent sessions - <span class="font-bold text-fuchsia-800">£45</span></p>
+            <p>Volume discount: Book six sessions - <span class="font-bold text-fuchsia-800">£300</span></p>
           </div>
           </div>
 
       
        
 
-        <div class="w-screen bg-purple-700 py-10 text-center text-white" id="contactWork">
-          <div class="flex flex-col md:flex-row font-croissant justify-center space-y-4 md:space-y-0 md:space-x-[20%]">
-              <div class="font-raleway md:text-left">
-                <p class="font-croissant text-xl text-yellow-400 pb-4">Location</p>
-                <p>1 Main Street</p>
-                <p>Gibraltar</p>
-              </div>
-    
-              <div class="font-raleway md:text-left">
-                <p class="font-croissant text-xl text-yellow-400 pb-4">Contact</p>
-                <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href="mailto:info@suziwinecoaching.com"><p>Email: info@suziwinecoaching.com</p></a>
-                <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href="tel:34711001547"><p>Phone: +34 711 001 547</p></a>
-              </div>
-    
-              <div class="font-raleway md:text-left text-black hover:text-gray-200 hover:transition-colors duration-1000">
-                <a href="https://www.animascoaching.com/"><img class="h-16 mx-auto mb-2" src="images/AnimasLogo.jpeg" alt=""></a>
-                <p class="hidden md:block">Animas Coaching</p>
-              </div>
-          </div> 
-        </div>
+          <div class="w-screen bg-fuchsia-800 py-10 text-center text-white" id="contactWork">
+            <div class="flex flex-col md:flex-row font-croissant justify-center space-y-4 md:space-y-0 md:space-x-[20%]">
+              
+      
+                <div class="font-raleway md:text-left">
+                  <p class="font-croissant text-xl text-yellow-300 pb-4">Contact</p>
+                  <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href="mailto:info@suziwinecoaching.com"><p>Email: info@suziwinecoaching.com</p></a>
+                  <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href="tel:34711001547"><p>Phone: +34 711 001 547</p></a>
+                </div>
+      
+                <div class="font-raleway md:text-left text-black hover:text-gray-200 hover:transition-colors duration-1000">
+                  <a href="https://www.animascoaching.com/"><img class="h-16 mx-auto mb-2" src="images/AnimasLogo.jpeg" alt=""></a>
+                  <p class="hidden md:block">Animas Coaching</p>
+                </div>
+            </div> 
+          </div>
 
   </body>
+  <script>
+    function Open(){
+        document.querySelector('.sidebar').classList.toggle('left-[-300px]');
+      }
+  </script>
 </html>

@@ -12,58 +12,74 @@
     />
     
   </head>
-  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway">
+  <body class="bg-gradient-to-r from-orange-200 to-orange-300 font-raleway overflow-x-hidden">
        
     <div class="w-screen pt-8 flex place-content-around items-center bg-orange-100 md:bg-white md:bg-opacity-40 backdrop-blur-sm bg-blur relative md:fixed top-0 md:w-full md:z-40 shadow-md">
       <div>
         <button
-        type="button"
-        class="menu-toggle relative -translate-y-4 inline-flex items-center justify-center rounded-md p-2 text-orange-600 hover:bg-purple-700 hover:bg-opacity-50 hover:text-white md:hidden active:rotate-90 transition-transform duration-300"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-      >
-        <span class="absolute -inset-0.5"></span>
+        class="relative -translate-y-5 inline-flex items-center justify-center rounded-md hover:bg-orange-600 hover:bg-opacity-50 md:hidden"
+       >
+       
         <span class="sr-only">Open main menu</span>
-        <svg
-                class="block h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                /></svg>
+        <span class="absolute text-white text-4xl  cursor-pointer lg:hidden" onclick="Open()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list p-1 cursor-pointer text-orange-600 hover:text-white hover:bg-orange-400 transition-colors rounded" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </span>
         </div>
       <div >
-        <h1 class="text-xl md:text-3xl -translate-y-4 font-bold text-orange-600 font-croissant">
+        <h1 class="text-xl md:text-lg lg:text-3xl -translate-y-4 font-bold text-orange-600 font-croissant">
           Suzi Wine - Life Coach
         </h1>
       </div>
       <div>
         <a href="/index.html">
-        <img class="h-20 -translate-y-4 hover:opacity-80" src="/images/logo.png" alt="" />
-      </a>
+          <img class="h-20 -translate-y-4 hover:opacity-80" src="/images/logo.png" alt="" />
+        </a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
       >
         <a href="/about.html">About Me</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
       >
         <a href="/works.html">How It Works</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-purple-700 hover:text-purple-900 hover:border-b border-purple-800 font-croissant"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
       >
         <a href="#contactWork">Contact</a>
       </div>
+      <div
+        class="hidden md:block -translate-y-4 text-lg text-orange-600 hover:text-orange-600 border px-3 py-1 rounded-sm bg-white bg-opacity-80  hover:bg-opacity-30 hover:transition-colors border-orange-400 font-croissant active:bg-orange-200 active:bg-opacity-40 active:duration-300"
+      >
+        <a href=tel:34711001547>Call Me</a>
+      </div>
     </div>
+    
+      <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center bg-fuchsia-900 lg:hidden shadow-lg shadow-black">
+        <div class="text-gray-100 text-xl">
+          <div class="p-2.5 mt-1 flex items-center">
+            
+           
+            <h3 class="text-sm font-bold text-orange-400 ml-3">Menu</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-orange-400 ml-44 cursor-pointer" viewBox="0 0 16 16" onclick="Open()">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div>
+          <hr class="my-2 border-orange-400">
+        </div>
+        
+        <nav class=" mt-3 flex flex-col text-left rounded duration-300 font-semibold text-yellow-300">
+          <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/index.html">Home</a>
+          <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/about.html">About Me</a>
+          <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/works.html">How it works</a>
+          <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="#contactWork">Contact</a>
+          <a href="tel:34711001547" class="p-4 transition hover:bg-yellow-300 hover:text-fuchsia-900 mr-40 rounded">Call Me</a>
+        </nav>
+      </div>
 
         <div>
          
@@ -76,8 +92,8 @@
              
              
             </div>
-            <div class="md:bg-orange-100 lg:border-r-4 border-purple-600 font-semibold md:w-2/3 md:mb-8 md:shadow-lg px-10 py-8 md:px-12 lg:py-12 lg:m-10 lg:mt-72 md:mt-36 md:py-10 md:ml-0.5">
-              <p class="font-croissant text-xl text-center text-orange-600">Suzi Wine</p><br>
+            <div class="md:bg-orange-100 lg:border-r-4 border-fuchsia-800 font-semibold md:w-2/3 md:mb-8 md:shadow-lg px-10 py-8 md:px-12 lg:py-12 lg:m-10 lg:mt-72 md:mt-36 md:py-10 md:ml-0.5">
+              <p class="font-croissant text-xl text-center text-fuchsia-800">Suzi Wine</p><br>
               <p>
                 I am a trained Coach with the Animas School of Transformative Coaching and a Member of the International 
                 Coaching Federation (ICF). I also work according to the ICF Code of Ethics, details of which can be found 
@@ -85,7 +101,7 @@
                 going through midlife career changes or other challenges.
               </p>
              
-              <a href=tel:34711001547><button class="lg:block md:hidden bg-orange-300 bg-opacity-80 border-2 border-orange-600 font-bold px-4 py-2 md:mt-4 rounded-sm shadow-lg hover:bg-orange-300 hover:transition-colors active:shadow-none active:translate-y-[1px] active:bg-opacity-50">
+              <a href=tel:34711001547><button class="lg:block hidden bg-fuchsia-800 bg-opacity-20 border-2 border-fuchsia-800 font-bold px-4 py-2 md:mt-4 rounded-sm shadow-lg hover:bg-opacity-40 hover:transition-colors active:shadow-none active:translate-y-[1px] active:bg-opacity-50">
                 Get in Touch
               </button></a>
             </div>
@@ -110,7 +126,7 @@
            </div>
         </div> -->
        
-        <div class="md:bg-purple-600 ">
+        <div class="md:bg-fuchsia-800 ">
           <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:py-16 md:mx-16 lg:mx-32">
             <div class="md:w-full bg-suzi-active bg-contain bg-no-repeat ">
               <img class="shadow-lg" src="/images/suzi-active.jpg" alt="">
@@ -119,7 +135,7 @@
           
             <div class="md:bg-orange-100  font-semibold md:w-full px-10 py-10 md:px-10 md:py-[10%] lg:py-20 lg:hidden">
               <!-- <p>Suzi Wine</p> -->
-              <p class="font-croissant text-xl text-center text-purple-700">Personal Trainer</p><br>
+              <p class="font-croissant text-xl text-center text-fuchsia-800">Personal Trainer</p><br>
               <p>
                 As a qualified Personal Trainer I have used my knowledge of functional training, exercise and nutrition to 
                 inform my work as a coach in areas of self esteem, health and wellbeing.  
@@ -130,7 +146,7 @@
             
            </div>
            <div class="bg-orange-100 hidden lg:block absolute -translate-y-80 ml-[40%] w-1/2 border-r-4 border-orange-400 font-semibold px-16 py-10 shadow-lg">
-            <p class="font-croissant text-xl text-center text-purple-700">Personal Trainer</p><br>
+            <p class="font-croissant text-xl text-center text-fuchsia-800">Personal Trainer</p><br>
             <p>
               As a qualified Personal Trainer I have used my knowledge of functional training, exercise and nutrition to 
               inform my work as a coach in areas of self esteem, health and wellbeing.  
@@ -144,7 +160,7 @@
           
             <div class="md:bg-opacity-20 font-semibold  md:px-10 md:py-20">
               <!-- <p>Suzi Wine</p> -->
-              <p class="font-croissant text-xl md:text-3xl text-center text-purple-700">What they Say</p><br>
+              <p class="font-croissant text-xl md:text-3xl text-center text-fuchsia-800">What they Say</p><br>
               
               <div class="flex flex-col lg:flex-row space-y-5 md:space-y-0 md:space-x-20 pt-10 text-sm md:text-base">
               
@@ -159,7 +175,7 @@
               </em></p>
             </div>
             <br>
-              <hr class="lg:hidden w-3/5 mx-auto border-purple-700">
+              <hr class="lg:hidden w-3/5 mx-auto border-fuchsia-800">
               <div >
               <p class="font-croissant text-right text-orange-600 pb-6">Aliza</p>
               <p><em><span class="font-croissant text-xl text-center text-orange-600">" </span>
@@ -169,7 +185,7 @@
                 <span class="font-croissant text-xl text-center text-orange-600">" </span>
               </em></p><br>
             </div>
-              <hr class="lg:hidden w-3/5 mx-auto border-purple-700">
+              <hr class="lg:hidden w-3/5 mx-auto border-fuchsia-800">
               <div>
               <p class="font-croissant text-right text-orange-600 pb-6">Diane</p>
               <p><em><span class="font-croissant text-xl text-center text-orange-600">" </span>
@@ -186,14 +202,14 @@
         </div>
        
 
-        <div class="w-screen bg-purple-700 py-10 text-center text-white" id="contactWork">
+        <div class="w-screen bg-fuchsia-800 py-10 text-center text-white" id="contactWork">
           <div class="flex flex-col md:flex-row font-croissant justify-center space-y-4 md:space-y-0 md:space-x-[20%]">
-              
+            
     
               <div class="font-raleway md:text-left">
-                <p class="font-croissant text-xl text-yellow-400 pb-4">Contact</p>
+                <p class="font-croissant text-xl text-yellow-300 pb-4">Contact</p>
                 <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href="mailto:info@suziwinecoaching.com"><p>Email: info@suziwinecoaching.com</p></a>
-                <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href=tel:34711001547><p>Phone: +34 711 001 547</p></a>
+                <a class="hover:text-purple-300 hover:transition-colors hover:duration-600 duration-400" href="tel:34711001547"><p>Phone: +34 711 001 547</p></a>
               </div>
     
               <div class="font-raleway md:text-left text-black hover:text-gray-200 hover:transition-colors duration-1000">
@@ -204,4 +220,9 @@
         </div>
 
   </body>
+  <script>
+    function Open(){
+        document.querySelector('.sidebar').classList.toggle('left-[-300px]');
+      }
+  </script>
 </html>
