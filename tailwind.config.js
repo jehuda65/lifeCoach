@@ -12,6 +12,7 @@ export default {
         'suzi-prof': "url('/images/suzi-prof.jpg')",
         'suzi-chill': "url('/images/suzi-chilled.jpg')",
         'suzi-active': "url('/images/suzi-active.jpg')",
+        'suzi-new': "url('/images/suzi-new.jpg')",
       }
     },
   },
