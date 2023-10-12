@@ -6,7 +6,8 @@ export default {
       fontFamily: {
         raleway: ['Raleway'],
         croissant: ['Croissant One'],
-        poppins: ['Poppins']
+        poppins: ['Poppins'],
+        dm: ['DM Serif Display']
       },
       backgroundImage: {
         'suzi-prof': "url('/images/suzi-prof.jpg')",
