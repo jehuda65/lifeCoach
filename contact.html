@@ -14,22 +14,22 @@
   </head>
   <body class="bg-white font-raleway overflow-x-hidden">
        
-    <div class="w-screen px-6 space-x-[15%] md:space-x-0 h-14 md:h-24 pt-8 flex place-content-around items-center bg-orange-100 md:bg-white md:bg-opacity-40 backdrop-blur-sm bg-blur fixed md:fixed top-0 md:w-full md:z-40 shadow-md">
+    <div class="w-screen px-6 md:pl-0 space-x-[15%] md:space-x-3  h-14 md:h-24 pt-8 flex place-content-between items-center bg-white md:bg-gray-100 bg-opacity-40 md:bg-opacity-40 backdrop-blur-sm bg-blur fixed md:fixed top-0 md:w-full z-30 shadow-md">
       <div>
         <button
         class="relative -translate-y-5 inline-flex items-center justify-end rounded-md hover:bg-orange-600 hover:bg-opacity-50 md:hidden"
        >
        
         <span class="sr-only">Open main menu</span>
-        <span class="absolute text-white text-4xl  cursor-pointer lg:hidden" onclick="Open()">
+        <span class="absolute text-white text-4xl translate-x-4 cursor-pointer lg:hidden" onclick="Open()">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list p-1 cursor-pointer text-orange-500 hover:text-white hover:bg-orange-400 transition-colors rounded" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
         </span>
         </div>
-        <div class="lg:basis-1/3 hidden md:block">
-          <h1 class="text-xl  md:block md:text-lg lg:text-3xl -translate-y-4 font-bold text-fuchsia-700 font-croissant">
-            Suzi Wine - Life Coach
+        <div class="lg:basis-5/12 hidden md:block">
+          <h1 class="text-xl  md:block md:text-lg lg:text-3xl -translate-y-4 font-bold text-fuchsia-700 font-dm">
+            <!-- Suzi Wine -->
           </h1>
         </div>
         <div>
@@ -45,76 +45,68 @@
         </div> -->
       
       <div
-        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 md:text-base lg:text-xl"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-raleway md:text-base lg:text-lg"
       >
         <a href="/index.html">Home</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 md:text-base lg:text-xl"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-raleway md:text-base lg:text-lg"
       >
         <a href="/about.html">About Me</a>
       </div>
       <div
-      id="menuB"
-        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 md:text-base lg:text-xl"
-        onmouseover="Drop()"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 border-b border-fuchsia-900 font-raleway md:text-base lg:text-lg"
       >
-        <a href="/works.html" onmouseover="Drop()" onmouseleave="Drop()">How It Works</a>
-        <div class="dropdown w-full hidden leading-9 top-10 absolute rounded-sm bg-fuchsia-800 text-white  font-raleway text-base">
-          <ul>
-            <a href="works.html#discovery"><li class="p-1 pl-3 hover:bg-white hover:text-orange-500">Starting off</li></a>
-            <a href="./works.html"><li class="p-1 pl-3 hover:bg-white hover:text-orange-500" >The sessions</li></a>
-            <a href="works.html"><li class="p-1 pl-3 hover:bg-white hover:text-orange-500" >Fees</li></a>
-          </ul>
-        </div>
+        <a href="/works.html">How It Works</a>
       </div>
       <!-- <div
-        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-croissant md:text-base lg:text-xl"
+        class="hidden md:block -translate-y-4 text-lg text-fuchsia-800 hover:text-fuchsia-900 hover:border-b border-fuchsia-900 font-raleway md:text-base lg:text-xl"
       >
         <a href="#contactWork">Contact</a>
       </div> -->
       <div
-      class="hidden md:block -translate-y-4 shadow-md active:-translate-y-[15px] px-4 py-2 text-white rounded-se-md bg-fuchsia-800  lg:mx-3 hover:bg-opacity-80 hover:transition-colors active:bg-orange-200 active:bg-opacity-40 active:duration-300"
+        class="hidden md:block -translate-y-4 shadow-md active:-translate-y-[15px] px-4 py-2 text-white rounded-se-md bg-fuchsia-800  lg:mx-3 hover:bg-opacity-80 hover:transition-colors active:bg-orange-200 active:bg-opacity-40 active:duration-300"
       >
-        <a href="tel:+34711001547">Get in touch</a>
+        <a href="./contact.html">Get in touch</a>
       </div>
     </div>
     
-    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center bg-fuchsia-900 lg:hidden shadow-md shadow-black">
-      <div class="text-gray-100 text-xl">
-        <div class="p-2.5 mt-1 flex items-center">           
-          <h3 class="text-sm font-bold text-fuchsia-600 ml-3">Menu</h3>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-orange-400 ml-44 cursor-pointer" viewBox="0 0 16 16" onclick="Open()">
-            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
+      <div class="sidebar fixed z-50 top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center bg-fuchsia-900 lg:hidden shadow-md shadow-black">
+        <div class="text-gray-100 text-xl">
+          <div class="p-2.5 mt-1 flex items-center">           
+            <h3 class="text-sm font-bold text-fuchsia-600 ml-3">Menu</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-orange-400 ml-44 cursor-pointer hover:text-orange-300" viewBox="0 0 16 16" onclick="Open()">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div>
+          <hr class="my-2 mx-4 border-fuchsia-600">
         </div>
-        <hr class="my-2 border-fuchsia-600">
+        
+        <nav class=" mt-3 flex flex-col text-left rounded duration-300 font-semibold text-white z-50">
+          <a class="p-4 transition hover:border-r-4 hover:text-orange-400 border-orange-400" href="/index.html">Home</a>
+          <a class="p-4 transition hover:border-r-4 hover:text-orange-400 border-orange-400" href="/about.html">About Me</a>
+          <a class="p-4 transition hover:border-r-4 hover:text-orange-400 border-orange-400" href="/works.html">How it works</a>
+          <a class="p-4 transition hover:border-r-4 hover:text-orange-400 border-orange-400" href="#contactWork">Contact</a>
+          <a href="tel:+34711001547">
+          <div class="flex p-4 mx-14 mt-2 transition bg-white hover:bg-opacity-30 text-fuchsia-900 hover:text-orange-400  rounded place-content-center space-x-4 items-center">
+          <p>Get in touch </p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill " viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+        </div></a>
+        </nav>
       </div>
-      
-      <nav class=" mt-3 flex flex-col text-left rounded duration-300 font-semibold text-white">
-        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/index.html">Home</a>
-        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/about.html">About Me</a>
-        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="/works.html">How it works</a>
-        <a class="p-4 transition hover:border-r-4 hover:text-yellow-200 border-yellow-300" href="#contactWork">Contact</a>
-        <a href="tel:+34711001547">
-        <div class="flex p-4 mx-14 mt-2 transition bg-white hover:bg-opacity-30 text-fuchsia-900 hover:text-orange-400  rounded place-content-center space-x-4 items-center">
-        <p>Get in touch </p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill " viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-        </svg>
-      </div></a>
-      </nav>
-    </div>
-
        
        
-       <div class="bg-gray-300 md:py-24 mt-14 md:mt-24 md:px-40">
+       <div class="bg-[#c8c8c8] md:py-24 mt-14 md:mt-24 md:px-40">
 
         <div class="flex flex-col-reverse place-content-evenly md:flex-row justify-center bg-white md:py-20 py-8 px-6 md:px-16 rounded border-8 border-fuchsia-800 border-opacity-30">
           <div class="align-middle my-auto">
-            <p class="text-2xl font-semibold text-fuchsia-800 pb-10">Suzi Wine - Health, Well Being & Lifestyle Coach</p>
-            <p>Email: info@suziwinecoaching.com</p>
-            <p>Tel: +34 711 001 547</p>
+            <p class="text-xl md:text-2xl font-semibold text-fuchsia-800 pb-10">Suzi Wine - Health, Well Being & Lifestyle Coach</p>
+            <div class="md:text-xl">
+            <a href="mailto:info@suziwinecoaching.com" class="hover:text-fuchsia-700 transition-colors"><p>Email: info@suziwinecoaching.com</p></a>
+            <a href="tel:+34711001547" class="hover:text-fuchsia-700 transition-colors duration-300"><p>Tel: +34 711 001 547</p></a>
+          </div>
           </div>
           <div class="px-auto content-end pb-6 md:pb-0">
             <img class="w-full max-w-[50vw] mx-auto my-auto md:max-w-[500px]" src="images/fullLogo.png" alt="">
