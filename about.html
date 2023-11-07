@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
     <link href="/index.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/faviconLogo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"
     />
+    <style>
+      @keyframes slide{
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
     
   </head>
-  <body class="font-raleway overflow-x-hidden">
+  <body class="font-['arial'] overflow-x-hidden">
        
     <div class="w-screen px-6 md:pl-0 space-x-[15%] md:space-x-3  h-14 md:h-24 pt-8 flex place-content-between items-center bg-white md:bg-gray-100 bg-opacity-40 md:bg-opacity-40 backdrop-blur-sm bg-blur fixed md:fixed top-0 md:w-full z-30 shadow-md">
       <div>
@@ -28,7 +38,7 @@
         </span>
         </div>
         <div class="lg:basis-5/12 hidden md:block">
-          <h1 class="text-xl  md:block md:text-lg lg:text-3xl -translate-y-4 font-bold text-fuchsia-700 font-croissant">
+          <h1 class="text-xl  md:block md:text-lg lg:text-3xl -translate-y-4">
             
           </h1>
         </div>
@@ -45,17 +55,17 @@
         </div> -->
       
       <div
-        class="hidden md:block -translate-y-4 text-lg hover:text-[#5ab7cf] hover:border-b border-[#5ab7cf] font-raleway md:text-base lg:text-lg"
+        class="hidden md:block -translate-y-4 text-lg hover:text-[#5ab7cf] hover:border-b border-[#5ab7cf] md:text-base lg:text-lg"
       >
         <a href="/index.html">Home</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg text-[#5ab7cf] hover:border-b border-[#5ab7cf] font-raleway md:text-base lg:text-lg"
+        class="hidden md:block -translate-y-4 text-lg text-[#5ab7cf] hover:border-b border-[#5ab7cf] md:text-base lg:text-lg"
       >
         <a href="/about.html">About Me</a>
       </div>
       <div
-        class="hidden md:block -translate-y-4 text-lg hover:text-[#5ab7cf] hover:border-b border-[#5ab7cf] font-raleway md:text-base lg:text-lg"
+        class="hidden md:block -translate-y-4 text-lg hover:text-[#5ab7cf] hover:border-b border-[#5ab7cf] md:text-base lg:text-lg"
       >
         <a href="/works.html">How It Works</a>
       </div>
@@ -132,52 +142,40 @@
         
 
 
-        <div class="md:mt-24 mt-14 md:bg-[#e5e5e5] lg:py-16">
-          <div class="flex flex-col md:flex-row md:py-16 md:mx-16 lg:mx-32">
-            <div class="md:w-full  bg-[url('/images/suzi-new.jpg')] md:bg-none h-[50vh] md:h-full bg-cover bg-center bg-no-repeat ">
-              <img class="shadow-lg hidden md:block lg:max-w-[80%]" src="/images/suzi-new.jpg" alt="">
+        <div class="font-['arial'] md:mt-24 mt-14 md:bg-[#e5e5e5] lg:py-16">
+          <div class="flex flex-col lg:flex-row md:rounded-lg md:py-16 md:mx-16 lg:mx-32 ">
+            <div class="md:w-full  bg-[url('/images/latest-pix/suzi-dog.jpg')]  h-[50vh] md:h-full bg-cover bg-center bg-no-repeat md:shadow-lg lg:rounded-l-lg">
+              <img class="shadow-lg hidden md:block md:rounded-t-lg lg:rounded-l-lg lg:rounded-r-none lg:object-cover lg:h-[70vh]" src="/images/latest-pix/suzi-dog.jpg" alt="">
               
             </div>
           
-            <div class="bg-fuchsia-700 md:bg-white md:w-full px-10 py-10 md:px-10 md:py-[10%] lg:py-20 lg:hidden">
+            <div class="md:bg-white md:w-full px-10 py-16 md:px-10 md:py-[8vh] lg:py-[6%] lg:border-r-8 border-[#5ab7cf] lg:px-0 lg:shadow-lg md:rounded-b-lg lg:rounded-l-none lg:rounded-b-none">
               <!-- <p>Suzi Wine</p> -->
-              <p class="text-2xl md:text-3xl text-center font-dm font-semibold text-white md:text-fuchsia-800">Suzi Wine</p><br>
-              <p class="md:text-black text-white p-6 md:p-0 md:pt-6">
-                Coaching is what I do naturally.  Training with the Animas School of Transformative Coaching was the natural next step. <br>
+              <p class="text-2xl md:text-3xl text-center text-sky-800 md:text-sky-800 ">Suzi Wine</p><br>
+              <p class="md:text-black px-4 md:p-0 md:pt-6 lg:pt-[1vw] md:px-16 lg:px-[12%]">
+                Coaching is what I do naturally.  Training with the Animas School of Transformative Coaching was the natural next step. <br><br>
                 As a wife, mother of six and having lived and worked in multiple countries I have certainly faced many challenges that have 
-                tested my resilience. Each one has had it’s challenges and been an opportunity. <br>
+                tested my resilience. Each one has had it’s challenges and been an opportunity. <br><br>
                 As a member of the International Coaching Federation (ICF) I work according to the ICF Code of Ethics, details of which can be found on the
                 
-                 <span class="text-[#5ab7cf]"> <a href="https://coachingfederation.org/">ICF website</a></span>.
+                 <span class="text-sky-700"> <a href="https://coachingfederation.org/">ICF website</a></span>.
               </p>
               
             </div>
-            <div class="md:w-full hidden lg:block"></div>
-            
            </div>
-           <div class="bg-white hidden lg:block absolute -translate-y-[60vh] ml-[40%] w-1/2 border-r-8 border-[#5ab7cf] px-16 py-16 shadow-lg">
-            <p class=" text-[#5ab7cf] text-3xl text-center pb-4 font-poppins ">Suzi Wine</p><br>
-            <p class="leading-8 text-lg">
-              Coaching is what I do naturally.  Training with the Animas School of Transformative Coaching was the natural next step. <br>
-                As a wife, mother of six and having lived and worked in multiple countries I have certainly faced many challenges that have 
-                tested my resilience. Each one has had its challenges and been an opportunity. <br>
-                As a member of the International Coaching Federation (ICF) I work according to the ICF Code of Ethics, details of which can be found on the
-                 <span class="text-[#5ab7cf]"> <a href="https://coachingfederation.org/">ICF website</a></span>.
-            </p>
-
-           </div>
+          
         </div>
-        <div class="md:bg-[#b6e1f2] lg:py-16">
-          <div class="flex flex-col md:flex-row md:py-16 md:mx-16 lg:mx-32">
-            <div class="md:w-full bg-[url('/images/suzi-active.jpg')] h-[50vh] md:h-full bg-cover bg-bottom bg-no-repeat ">
-              <img class="shadow-lg hidden md:block" src="/images/suzi-active.jpg" alt="">
-              
+        <div class="md:bg-[#5ab7cf] lg:py-16">
+          <div class="flex flex-col md:flex-row md:py-16 md:mx-16 lg:mx-32 md:rounded-xl lg:rounded-none">
+            <div class="md:w-full bg-[url('/images/suzi-active.jpg')] lg:bg-none h-[75vw] md:h-full bg-cover bg-bottom bg-no-repeat md:rounded-l-lg">
+              <img class="shadow-lg hidden lg:block lg:max-h-[80vh] rounded-lg" src="/images/suzi-active.jpg" alt="">
+              <div class="lg:hidden h-[49vw]"></div>
             </div>
           
-            <div class="bg-fuchsia-700 md:bg-white md:w-full px-10 py-10 md:px-10 md:py-[10%] lg:py-20 lg:hidden">
+            <div class="bg-[#b6e1f2] md:bg-white md:w-full px-8 py-16 md:px-10 md:py-[6vw] md:rounded-r-lg lg:rounded-r-none lg:absolute lg:translate-y-[10vh] lg:ml-[30%] lg:w-1/2 lg:rounded-l-lg lg:border-r-8 lg:border-[#b6e1f2] lg:px-16 lg:py-[6%] lg:shadow-lg">
               <!-- <p>Suzi Wine</p> -->
-              <p class="text-2xl md:text-3xl text-center font-dm font-semibold text-white md:text-[#5ab7cf]">Personal Trainer</p><br>
-              <p class="md:text-black text-white p-6 md:p-0 md:pt-6">
+              <p class="text-2xl lg:text-3xl text-center text-sky-800">Personal Trainer</p><br>
+              <p class="p-6 md:px-8 md:pb-0 md:leading-7 md:pt-[1%]">
                 As a qualified Personal Trainer I have used my knowledge of functional training, exercise and diet to 
                 inform my work as a coach in areas of self esteem and living your most healthful and balanced life  
               </p>
@@ -185,27 +183,57 @@
             </div>
             <div class="md:w-full hidden lg:block"></div>
             
-           </div>
+           <!-- </div>
            <div class="bg-white hidden lg:block absolute -translate-y-[60vh] ml-[40%] w-1/2 border-r-8 border-[#5ab7cf] px-16 py-16 shadow-lg">
-            <p class="text-3xl text-center text-[#5ab7cf] pb-4 font-poppins">Personal Trainer</p><br>
+            <p class="text-3xl text-center text-[#5ab7cf] pb-4">Personal Trainer</p><br>
             <p class="leading-8 text-lg">
               As a qualified Personal Trainer I have used my knowledge of functional training, exercise and diet to 
               inform my work as a coach in areas of self esteem and living your most healthful and balanced life.  
             </p>
 
-           </div>
+           </div> -->
         </div>
+        </div>
+        
+
+        <!-- TO BE TURNED INTO A CAROUSEL -->
+    
+
+        
         
         <div>
           <div 
           id="reviews"
-          class="py-16 px-10 md:py-10 md:px-32 ">
+          class="py-16 px-10 md:py-10 md:px-0 bg-white">
           
-            <div class="md:bg-opacity-20 md:px-10 md:py-20 md:text-lg">
+            <div class="md:bg-opacity-20 md:px-0 md:py-20 md:text-lg">
               <!-- <p>Suzi Wine</p> -->
-              <p class="text-2xl md:text-3xl text-center font-poppins text-[#5ab7cf]">What they Say</p><br>
+              <p class="text-2xl md:text-3xl text-center text-sky-800">What they Say</p><br>
+
+              <div class="md:text-base md:block carousel px-6 py-10 lg:px-[20vw] lg:py-[10vh] lg:overflow-hidden lg:whitespace-nowrap group relative 
+                    lg:before:absolute before:top-0 before:left-0 lg:before:w-[20vw] lg:before:h-[100%] lg:before:bg-gradient-to-r from-white to none lg:before:content-[''] lg:before:z-20 
+                    lg:after:absolute after:top-0 after:right-0 lg:after:w-[20vw] lg:after:h-[100%] lg:after:bg-gradient-to-l to none lg:after:content-[''] lg:after:z-20">
+
+          <div class="flex flex-col md:flex-row flex-wrap justify-center lg:flex-nowrap reviews-slide lg:animate-[25s_slide_infinite_linear] lg:inline-flex group-hover:animate-pause space-y-12 lg:space-y-0 lg:align-middle">
+
+            <div class="rounded-lg basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt="">  <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Mahesh</p> <p>"Suzi's style of coaching is warm, friendly and always with a smile. She made me think quite deeply and help me re-frame areas of negativity and doubts that really needed it. Overall, I feel much much better and positive about the future now and I am genuinely grateful for the experience. Wow who would have thought a complete stranger could have done this!"</p></div>
+            <div class="rounded-lg basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Aliza</p><p> "Suzi made me feel very comfortable and gave me the platform to speak in a non-judgemental way. She listened and reflected and validated my feelings and gave me the opportunity to work things out for myself. I would definitely have further sessions with Suzi in the future"</p></div>
+            <div class="rounded-lg basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Diane</p><p> "I've found working with Suzi deeply helpful. Rather than only looking at the past, I found myself unlocking emotional and practical blocks to finding solutions. I became able to pave the way to create real change and left her services feeling more sure about strategies ahead. I felt hopeful and saw results"</p></div>
+            <div class="rounded-lg basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Alicia</p><p> "Suzi's method of training was personally tailored to my needs and lifestyle. She listened to my long term goals and more importantly helped me adjust my expectations so that my progress was manageable. Suzi didnt only help me get in shape physically but she taught me to find the motivation in a healthy way - most important for my mind"</p></div>
+
+          </div>
+          <div class="hidden reviews-slide lg:animate-[25s_slide_infinite_linear] lg:inline-flex group-hover:animate-pause align-middle">
+
+            <div class="rounded-lg shadow-lg px-14 py-8 bg-[#b6e1f2] mx-10 inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line w-[30vw]"> <img class="absolute -top-1  md:-translate-x-2 lg:-translate-x-20 mix-blend-overlay h-1/2 opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center font-semibold text-xl text-sky-800">Mahesh</p><p> "Suzi's style of coaching is warm, friendly and always with a smile. She made me think quite deeply and help me re-frame areas of negativity and doubts that really needed it. Overall, I feel much much better and positive about the future now and I am genuinely grateful for the experience. Wow who would have thought a complete stranger could have done this!"</p></div>
+            <div class="rounded-lg shadow-lg px-14 py-8 bg-[#b6e1f2] mx-10 inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line w-[30vw]"> <img class="absolute -top-1  md:-translate-x-2 lg:-translate-x-20 mix-blend-overlay h-1/2 opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center font-semibold text-xl text-sky-800">Aliza</p><p> "Suzi made me feel very comfortable and gave me the platform to speak in a non-judgemental way. She listened and reflected and validated my feelings and gave me the opportunity to work things out for myself. I would definitely have further sessions with Suzi in the future"</p></div>
+            <div class="rounded-lg shadow-lg px-14 py-8 bg-[#b6e1f2] mx-10 inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line w-[30vw]"> <img class="absolute -top-1  md:-translate-x-2 lg:-translate-x-20 mix-blend-overlay h-1/2 opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center font-semibold text-xl text-sky-800">Diane</p><p> "I've found working with Suzi deeply helpful. Rather than only looking at the past, I found myself unlocking emotional and practical blocks to finding solutions. I became able to pave the way to create real change and left her services feeling more sure about strategies ahead. I felt hopeful and saw results"</p></div>
+            <div class="rounded-lg shadow-lg px-14 py-8 bg-[#b6e1f2] mx-10 inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line w-[30vw]"> <img class="absolute -top-1  md:-translate-x-2 lg:-translate-x-20 mix-blend-overlay h-1/2 opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center font-semibold text-xl text-sky-800">Alicia</p><p> "Suzi's method of training was personally tailored to my needs and lifestyle. She listened to my long term goals and more importantly helped me adjust my expectations so that my progress was manageable. Suzi didnt only help me get in shape physically but she taught me to find the motivation in a healthy way - most important for my mind"</p></div>
+
+          </div>
+
+        </div>
               
-              <div class="flex flex-col font-normal lg:flex-row space-y-5 lg:mt-10 md:space-y-0 md:space-x-28 pt-10 ">
+              <!-- <div class="flex flex-col font-normal lg:flex-row space-y-5 lg:mt-10 md:space-y-0 md:space-x-28 pt-10 ">
               
               <div class="md:ml-20 lg:ml-0 ">
                 <p class="text-right text-[#5ab7cf] pb-6">Mahesh</p>
@@ -239,9 +267,12 @@
                 <span class="font-dm text-xl text-center text-[#5ab7cf]">" </span>
               </em></p><br>
             </div>
-            </div>
+            </div> -->
             </div>
            </div>
+
+
+           
         </div>
        
 
@@ -276,5 +307,27 @@
       function Drop(){
         document.querySelector('.dropdown').classList.toggle('block bg-black');
       }
+
+      var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
   </script>
 </html>
