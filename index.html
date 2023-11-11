@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/index.css" rel="stylesheet" />
     <title>Suzi Wine</title>
-    <link rel="shortcut icon" href="images/faviconLogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo_stuff/faviconLogo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
         </div>
         <div>
           <a href="/index.html">
-            <img class="h-12 md:h-20 -translate-y-4 hover:opacity-80 " src="/images/logoNew.png" alt="" />
+            <img class="h-12 md:h-20 -translate-y-4 hover:opacity-80 " src="/images/logo_stuff/logoNew.png" alt="" />
           </a>
         </div>
         <div class="basis-1/8"></div>
@@ -128,28 +128,29 @@
       
 <!-- MODAL Email -->
       <div id="newsletterModal" class="hidden md:block fixed z-50 w-screen h-screen bg-white bg-opacity-5 backdrop-blur-sm">
-         <div class="absolute top-[15%] bottom-[30%] left-[30%] right-[30%] bg-sky-800 rounded-lg h-[50vh] shadow-xl shadow-slate-500">
+         <div class="absolute top-[13%] bottom-[25%] left-[25%] right-[25%] bg-sky-800 bg-opacity-90 backdrop-blur-lg rounded-lg h-[50vh] shadow-xl shadow-slate-500">
         <div class="flex">
 
-          <div class="basis-1/2">
+          <div class="basis-5/12">
             
             <img class="rounded-l-lg object-cover h-[50vh]" src="/images/latest-pix/suzi-dog.jpg" alt="">
           </div>
 
-         <div class="basis-1/2 flex flex-col place-content-between py-10 px-5  text-center items-center">
+         <div class="basis-7/12 flex flex-col place-content-between py-10 px-10  text-center items-center">
             
             <div class="cursor-pointer absolute top-2 right-2  bg-opacity-60 backdrop-blur-sm rounded-lg w-10 h-10">
               <svg id="closeModal" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-cyan-300 cursor-pointer hover:text-sky-400 hover:rotate-90 duration-300" viewBox="0 0 16 16" onclick="Open()">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
               </svg>
             </div>
-            <img class="h-28 w-20 delay-1000 animate-pulse duration-500" src="/images/logoNewFull.png" alt="">
+            <img class="h-28 w-20 delay-1000 animate-pulse duration-500" src="/images//logo_stuff/logoNewFull.png" alt="">
             <P class="text-2xl text-white ">Get Started</P>
-            <form id="newsletterForm flex flex-col space-y-4">
-              <input class="rounded py-2 w-[20vw] pl-2" type="text" id="emailInput" placeholder="Your Name" required>
-              <input class="rounded py-2 w-[20vw] mt-2 pl-2" type="email" id="emailInput" placeholder="Your Email" required>
+            <form id="newsletterForm" className="flex flex-col space-y-4">
+              <input class="rounded py-2 w-[25vw] pl-2 bg-white bg-opacity-80 shadow-inner" type="text" id="nameInput" placeholder="Your Name" required>
+              <input class="rounded py-2 w-[25vw] mt-2 pl-2 bg-white bg-opacity-80 shadow-inner" type="email" id="emailInput" placeholder="Your Email" required>
               <button 
-              class="w-[20vw] border-2 text-white rounded hover:bg-white hover:text-sky-800 py-2 mt-2" 
+              id="subscribeButton"
+              class="w-[25vw] border-2 text-white rounded hover:bg-white hover:text-sky-800 py-2 mt-2" 
               type="submit"
               onclick="closeModal()">
                 Subscribe</button>
@@ -209,7 +210,7 @@
 
      <div class="w-screen bg-[url('/images/mountains.jpg')] bg-no-repeat bg-cover px-32 py-[16vh] text-xl  hidden md:block">
       
-      <div class="bg-sky-100 rounded border-[#b6e1f2] p-12 py-20 backdrop-blur-sm hover:shadow-lg bg-opacity-30"><p>“Seek out that particular mental attribute which makes you feel most deeply and vitally alive, along with which comes the 
+      <div class="bg-sky-100 rounded-lg border-[#b6e1f2] p-12 py-20 backdrop-blur-sm hover:shadow-lg bg-opacity-30"><p>“Seek out that particular mental attribute which makes you feel most deeply and vitally alive, along with which comes the 
         inner voice which says, ‘This is the real me,’ and when you have found that attitude, follow it.” <br><span class="text-sm">- William James</span></em></p>
         <br>
       <p>“When someone really hears you without passing judgment on you, without trying to take responsibility for you, without 
@@ -217,23 +218,7 @@
     </div></div>
 
 
-    <!-- <div class="bg-slate-800 text-white md:text-black md:bg-[#b6e1f2] pb-[10vh] md:pb-0">
-      <div class="flex flex-col-reverse md:flex-row md:py-[20vh]">
-        <div class="basis-3/5 px-[10vw] md:pt-14"> 
-          
-            <p class="text-xl md:text-[22px] lg:text-3xl text-center border-b-2 border-dashed md:mb-12 bg-cyan-900 md:text-white py-1 px-3 md:w-full lg:w-[80%] absolute -translate-y-6 md:relative md:mx-auto md:rotate-2 hover:-rotate-2 duration-500 cursor-none">What you get working with me</p>
-            <p class="leading-7 md:leading-7 md:text-lg pt-20 md:pt-0">ME, Suzi. My years of coaching, learning and imparting that knowledge is what makes me love what I do. <br><br>
-              I provide you with the space to talk whilst giving you insight into yourself<br> <br>
-              I look to help you create a lasting change that leaves you feeling 
-              accomplished, energised and positive about your future.
-              </p>
-        </div>
-        <div class="md:pr-[10vw] basis-2/5 ">
-          <img class="h-[50vh] md:h-full object-cover w-screen  md:max-h-[80vh] md:rounded-xl md:shadow-lg shadow-[#afe8f7] md:hover:scale-105 transition-all duration-500" src="/images/untangling.jpg" alt="">
-        </div>
-        
-      </div>
-    </div> -->
+    
     <div class="md:p-20 bg-slate-800  md:text-black text-white md:bg-[#b6e1f2] pb-[10vh] md:pb-20 w-screen">
       <div class="md:bg-white rounded-2xl md:shadow-md">
       <div class="flex flex-col md:flex-col md:py-[15vh] ">
@@ -319,9 +304,9 @@
           </div>
   
           <div class="flex md:flex-col lg:flex-row items-center  mx-auto space-x-3 md:text-left text-fuchsia-500 hover:text-gray-200 hover:transition-colors duration-1000">
-            <div><a href="https://www.animascoaching.com/"><img class="w-16 min-h-16 md:min-w-[72px] md:w-full md:max-h-28 mx-auto mb-2" src="images/AnimasLogo.jpeg" alt="Animas Coaching"></a>
+            <div><a href="https://www.animascoaching.com/"><img class="w-16 min-h-16 md:min-w-[72px] md:w-full md:max-h-28 mx-auto mb-2" src="images/logo_stuff/AnimasLogo.jpeg" alt="Animas Coaching"></a>
             </div>
-            <div class="ml-0"> <a href="https://coachingfederation.org/"><img class="min-h-[0px] md:w-full max-h-16 md:max-h-[100px] mx-auto mb-2" src="images/icf.png" alt=""></a></div>
+            <div class="ml-0"> <a href="https://coachingfederation.org/"><img class="min-h-[0px] md:w-full max-h-16 md:max-h-[100px] mx-auto mb-2" src="images/logo_stuff/icf.png" alt=""></a></div>
           </div>
          
           <div class="items-center my-[20%] text-white md:pt-5">
@@ -367,10 +352,10 @@
     // }
 
     // Check if the modal should be displayed
-  // function shouldDisplayModal() {
+  function shouldDisplayModal() {
     // Check if a flag is set in localStorage
-  //   return !localStorage.getItem('modalDisplayed');
-  // }
+    return !localStorage.getItem('modalDisplayed');
+  }
 
   // Close the modal and set the flag in localStorage
   // function closeModal() {
@@ -389,6 +374,28 @@
   //     openModal();
   //   }
   // };
+
+
+  function changeText() {
+    // Get the button element by its ID
+    var button = document.getElementById('subscribeButton');
+
+    // Change the text content of the button
+    button.textContent = 'Subscribed!';
+  }
+
+  let url = "https://api.sender.net/v2/campaigns/";
+
+let headers = {
+    "Authorization": "Bearer [your-token]",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response => response.json());
   </script>
     </body>
     
