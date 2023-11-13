@@ -127,30 +127,30 @@
 
       
 <!-- MODAL Email -->
-      <div id="newsletterModal" class="hidden md:block fixed z-50 w-screen h-screen bg-white bg-opacity-5 backdrop-blur-sm">
-         <div class="absolute top-[13%] bottom-[25%] left-[25%] right-[25%] bg-sky-800 bg-opacity-90 backdrop-blur-lg rounded-lg h-[50vh] shadow-xl shadow-slate-500">
+      <div id="newsletterModal" class=" hidden sm:block fixed md:z-50 md:w-screen md:h-screen md:bg-white md:bg-opacity-5 md:backdrop-blur-sm">
+         <div class="absolute md:top-[13%] bottom-[25%] left-[25%] right-[25%] bg-sky-800 bg-opacity-90 backdrop-blur-lg rounded-lg h-[50vh] shadow-xl shadow-slate-500">
         <div class="flex">
 
-          <div class="basis-5/12">
+          <div class="basis-5/12 hidden md:block">
             
             <img class="rounded-l-lg object-cover h-[50vh]" src="/images/latest-pix/suzi-dog.jpg" alt="">
           </div>
 
-         <div class="basis-7/12 flex flex-col place-content-between py-10 px-10  text-center items-center">
+         <div class="md:basis-7/12 flex flex-col place-content-between py-10 px-[8%] md:px-10 text-center items-center">
             
             <div class="cursor-pointer absolute top-2 right-2  bg-opacity-60 backdrop-blur-sm rounded-lg w-10 h-10">
-              <svg id="closeModal" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-cyan-300 cursor-pointer hover:text-sky-400 hover:rotate-90 duration-300" viewBox="0 0 16 16" onclick="Open()">
+              <svg id="closeModal" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-cyan-300 cursor-pointer hover:text-sky-400 hover:rotate-90 duration-300" viewBox="0 0 16 16">
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
               </svg>
             </div>
             <img class="h-28 w-20 delay-1000 animate-pulse duration-500" src="/images//logo_stuff/logoNewFull.png" alt="">
             <P class="text-2xl text-white ">Get Started</P>
-            <form id="newsletterForm" className="flex flex-col space-y-4">
-              <input class="rounded py-2 w-[25vw] pl-2 bg-white bg-opacity-80 shadow-inner" type="text" id="nameInput" placeholder="Your Name" required>
-              <input class="rounded py-2 w-[25vw] mt-2 pl-2 bg-white bg-opacity-80 shadow-inner" type="email" id="emailInput" placeholder="Your Email" required>
+            <form id="subscribeForm" className="flex flex-col space-y-4">
+              <input class="rounded py-2 md:w-[25vw] mt-8 md:mt-0 pl-2 bg-white bg-opacity-80 shadow-inner" type="text" id="nameInput" placeholder="Your Name" required>
+              <input class="rounded py-2 md:w-[25vw] mt-2 pl-2 bg-white bg-opacity-80 shadow-inner" type="email" id="emailInput" placeholder="Your Email" required>
               <button 
               id="subscribeButton"
-              class="w-[25vw] border-2 text-white rounded hover:bg-white hover:text-sky-800 py-2 mt-2" 
+              class="w-[25vw] border-2 text-white rounded hover:bg-white hover:text-sky-800 py-2 mt-5 md:mt-2" 
               type="submit"
               onclick="closeModal()">
                 Subscribe</button>
@@ -160,6 +160,41 @@
       </div>
       </div> 
       </div>
+
+      <!-- index.html -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const subscribeForm = document.getElementById('subscribeForm');
+
+    subscribeForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const emailInput = document.getElementById('emailInput');
+      const email = emailInput.value;
+
+      // Make a request to your server-side endpoint
+      fetch('/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            // Subscription successful, handle accordingly (e.g., close the modal)
+            console.log('Subscription successful');
+          } else {
+            // Subscription failed, handle accordingly (e.g., show an error message)
+            console.error('Subscription failed:', data.error);
+          }
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  });
+</script>
 
 
 
@@ -231,9 +266,9 @@
         </div>
 
         <div class="flex flex-col md:flex-row items-center py-20 md:pt-20 mx-auto space-y-4 md:space-y-0 md:space-x-[6%] text-black md:text-white lg:text-lg">
-          <div class="hover:translate-y-2 duration-300 neumorph p-4 bg-[url('/images/faviconLogo.png')] bg-top md:bg-left-top text-center rounded flex justify-center items-center bg-[#5ab7cf] bg-opacity-100 md:bg-[#5ab7cf] h-[24vh] w-[40vw] md:w-full md:h-[13vw] border-0 border-[#5ab7cf] border-opacity-30">Structure around your goals</div>
-          <div class="hover:translate-y-2 duration-300 neumorph p-4 bg-[url('/images/faviconLogo.png')] bg-center md:bg-top text-center rounded flex justify-center items-center bg-[#5ab7cf] bg-opacity-100 md:bg-[#5ab7cf] h-[24vh] w-[40vw] md:w-full md:h-[13vw] border-0 border-[#5ab7cf] border-opacity-30">Tangible results</div>
-          <div class="hover:translate-y-2 duration-300 neumorph p-4 bg-[url('/images/faviconLogo.png')] bg-bottom md:bg-right-top text-center rounded flex justify-center items-center bg-[#5ab7cf] bg-opacity-100 md:bg-[#5ab7cf] h-[24vh] w-[40vw] md:w-full md:h-[13vw] border-0 border-[#5ab7cf] border-opacity-30">Accountability & a Support Structure</div> 
+          <div class="hover:translate-y-2 duration-300 neumorph p-4 bg-[url('/images/logo_stuff/faviconLogo.png')] bg-top md:bg-left-top text-center rounded flex justify-center items-center bg-[#5ab7cf] bg-opacity-100 md:bg-[#5ab7cf] h-[24vh] w-[40vw] md:w-full md:h-[13vw] border-0 border-[#5ab7cf] border-opacity-30">Structure around your goals</div>
+          <div class="hover:translate-y-2 duration-300 neumorph p-4 bg-[url('/images/logo_stuff/faviconLogo.png')] bg-center md:bg-top text-center rounded flex justify-center items-center bg-[#5ab7cf] bg-opacity-100 md:bg-[#5ab7cf] h-[24vh] w-[40vw] md:w-full md:h-[13vw] border-0 border-[#5ab7cf] border-opacity-30">Tangible results</div>
+          <div class="hover:translate-y-2 duration-300 neumorph p-4 bg-[url('/images/logo_stuff/faviconLogo.png')] bg-bottom md:bg-right-top text-center rounded flex justify-center items-center bg-[#5ab7cf] bg-opacity-100 md:bg-[#5ab7cf] h-[24vh] w-[40vw] md:w-full md:h-[13vw] border-0 border-[#5ab7cf] border-opacity-30">Accountability & a Support Structure</div> 
         
         </div>
 
@@ -340,16 +375,11 @@
     // Close the modal when the close button is clicked
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
+        localStorage.setItem('modalDisplayed', 'true');
     });
 
     // Show the modal when the page loads
     window.addEventListener('load', showModal);
-
-    // function closeModal(){
-    //   closeModal.addEventListener('click', () => {
-    //     modal.style.display = 'none';
-    // });
-    // }
 
     // Check if the modal should be displayed
   function shouldDisplayModal() {
@@ -357,46 +387,51 @@
     return !localStorage.getItem('modalDisplayed');
   }
 
-  // Close the modal and set the flag in localStorage
-  // function closeModal() {
-  //   document.getElementById('newsletterModal').classList.add('hidden');
-  //   localStorage.setItem('modalDisplayed', 'true');
-  // }
-
-  // Function to open the modal
-  // function openModal() {
-  //   document.getElementById('newsletterModal').classList.remove('hidden');
-  // }
-
   // Check if the modal should be displayed on page load
-  // window.onload = function () {
-  //   if (shouldDisplayModal()) {
-  //     openModal();
-  //   }
-  // };
+  window.onload = function () {
+    if (shouldDisplayModal()) {
+      openModal();
+    }
+  };
+
+  // function changeText() {
+  //   Get the button element by its ID
+  //   var button = document.getElementById('subscribeButton');
+
+  //   Change the text content of the button
+  //   button.textContent = 'Subscribed!';
+  // }
+
+</script>
+<script type="module">
+   // The sender api
+   const api = import.meta.env.sender_api_key;
 
 
-  function changeText() {
-    // Get the button element by its ID
-    var button = document.getElementById('subscribeButton');
-
-    // Change the text content of the button
-    button.textContent = 'Subscribed!';
-  }
-
-  let url = "https://api.sender.net/v2/campaigns/";
+const url = new URL(
+    "https://api.sender.net/v2/subscribers"
+);
 
 let headers = {
-    "Authorization": "Bearer [your-token]",
+    "Authorization": api,
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
+let data = {
+  "email": "support@sender.net",
+  "firstname": "Sender",
+  "lastname": "Support",
+  "groups": ["eZVD4w", "b2vAR1"],
+  "fields": {"{$test_text}":"Documentation example","{$test_num}": 8},
+  "trigger_automation": false
+};
+
 fetch(url, {
-    method: "GET",
-    headers,
+    method: "POST",
+    headers,body: JSON.stringify(data)
 }).then(response => response.json());
-  </script>
+</script>
     </body>
     
   
