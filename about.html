@@ -27,15 +27,16 @@
     <div class="w-screen px-6 md:pl-0 space-x-[15%] md:space-x-3  h-14 md:h-24 pt-8 flex place-content-between items-center bg-white md:bg-gray-100 bg-opacity-40 md:bg-opacity-40 backdrop-blur-sm bg-blur fixed md:fixed top-0 md:w-full z-30 shadow-md">
       <div>
         <button
-        class="relative -translate-y-5 inline-flex items-center justify-end rounded-md hover:bg-orange-600 hover:bg-opacity-50 md:hidden"
+        class="relative -translate-y-5 inline-flex items-center justify-end rounded-md hover:bg-sky-800 hover:bg-opacity-50 md:hidden"
        >
        
         <span class="sr-only">Open main menu</span>
         <span class="absolute text-white text-4xl translate-x-4 cursor-pointer lg:hidden" onclick="Open()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list p-1 cursor-pointer text-cyan-700 hover:text-white hover:bg-orange-400 transition-colors rounded" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list p-1 cursor-pointer text-cyan-700 hover:text-white hover:bg-sky-800 transition-colors rounded" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
         </span>
+        </button>
         </div>
         <div class="lg:basis-5/12 hidden md:block">
           <h1 class="text-xl  md:block md:text-lg lg:text-3xl -translate-y-4">
@@ -85,7 +86,7 @@
         <div class="text-gray-100 text-xl">
           <div class="p-2.5 mt-1 flex items-center">           
             <h3 class="text-sm font-bold text-cyan-700 ml-3">Menu</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-cyan-600 ml-44 cursor-pointer hover:text-orange-300" viewBox="0 0 16 16" onclick="Open()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x text-cyan-600 ml-44 cursor-pointer hover:text-sky-800" viewBox="0 0 16 16" onclick="Open()">
               <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
             </svg>
           </div>
@@ -152,7 +153,7 @@
             <div class="md:bg-white md:w-full px-10 py-16 md:px-10 md:py-[8vh] lg:py-[2vw] lg:pt-[3vw] lg:border-r-8 border-[#5ab7cf] lg:px-0 lg:shadow-lg md:rounded-b-lg lg:rounded-l-none lg:rounded-b-none">
               <!-- <p>Suzi Wine</p> -->
               <p class="text-2xl md:text-3xl text-center text-sky-800 md:text-sky-800 ">Suzi Wine</p><br>
-              <div class="md:text-black px-4 md:text-lg lg:text-base md:p-0 md:pt-6 lg:pt-[1vw] md:px-16 lg:px-[12%]">
+              <div class="md:text-black px-4 md:text-lg md:p-0 md:pt-6 lg:pt-[1vw] md:px-16 lg:px-[12%]">
                 <p>Coaching is what I do naturally.  Training with the Animas School of Transformative Coaching was the natural next step.</p>
                 <p class="md:pt-[5%]">As a wife, mother of six and having lived and worked in multiple countries I have certainly faced many challenges that have 
                 tested my resilience. Each one has had it’s challenges and been an opportunity.</p> 
@@ -183,15 +184,6 @@
             </div>
             <div class="md:w-full hidden lg:block"></div>
             
-           <!-- </div>
-           <div class="bg-white hidden lg:block absolute -translate-y-[60vh] ml-[40%] w-1/2 border-r-8 border-[#5ab7cf] px-16 py-16 shadow-lg">
-            <p class="text-3xl text-center text-[#5ab7cf] pb-4">Personal Trainer</p><br>
-            <p class="leading-8 text-lg">
-              As a qualified Personal Trainer I have used my knowledge of functional training, exercise and diet to 
-              inform my work as a coach in areas of self esteem and living your most healthful and balanced life.  
-            </p>
-
-           </div> -->
         </div>
         </div>
         
@@ -204,22 +196,22 @@
         <div>
           <div 
           id="reviews"
-          class="py-16 px-0 md:py-10 md:px-0 bg-white">
+          class="py-16 px-0 md:py-10 md:px-0 bg-white md:bg-sky-800">
           
             <div class="md:bg-opacity-20 md:px-0 md:py-20 md:text-lg">
               <!-- <p>Suzi Wine</p> -->
-              <p class="text-2xl md:text-3xl text-center text-sky-800">What they Say</p><br>
+              <p class="text-2xl md:text-3xl text-center text-sky-800 md:text-white">What they Say</p><br>
 
               <div class="md:text-base md:block carousel px-6 py-10 lg:px-[20vw] lg:py-[10vh] lg:overflow-hidden lg:whitespace-nowrap group relative 
-                    lg:before:absolute before:top-0 before:left-0 lg:before:w-[20vw] lg:before:h-[100%] lg:before:bg-gradient-to-r from-white to none lg:before:content-[''] lg:before:z-20 
+                    lg:before:absolute before:top-0 before:left-0 lg:before:w-[20vw] lg:before:h-[100%] lg:before:bg-gradient-to-r from-sky-800 to none lg:before:content-[''] lg:before:z-20 
                     lg:after:absolute after:top-0 after:right-0 lg:after:w-[20vw] lg:after:h-[100%] lg:after:bg-gradient-to-l to none lg:after:content-[''] lg:after:z-20">
 
           <div class="flex flex-col md:flex-row flex-wrap justify-center lg:flex-nowrap reviews-slide lg:animate-[25s_slide_infinite_linear] lg:inline-flex group-hover:animate-pause space-y-12 lg:space-y-0 lg:align-middle text-sm md:text-base">
 
-            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 lg:pt-6 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt="">  <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Mahesh</p> <p>"Suzi's style of coaching is warm, friendly and always with a smile. She made me think quite deeply and help me re-frame areas of negativity and doubts that really needed it. Overall, I feel much much better and positive about the future now and I am genuinely grateful for the experience. Wow who would have thought a complete stranger could have done this!"</p></div>
-            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Aliza</p><p> "Suzi made me feel very comfortable and gave me the platform to speak in a non-judgemental way. She listened and reflected and validated my feelings and gave me the opportunity to work things out for myself. I would definitely have further sessions with Suzi in the future"</p></div>
-            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Diane</p><p> "I've found working with Suzi deeply helpful. Rather than only looking at the past, I found myself unlocking emotional and practical blocks to finding solutions. I became able to pave the way to create real change and left her services feeling more sure about strategies ahead. I felt hopeful and saw results"</p></div>
-            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-300 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Alicia</p><p> "Suzi's method of training was personally tailored to my needs and lifestyle. She listened to my long term goals and more importantly helped me adjust my expectations so that my progress was manageable. Suzi didnt only help me get in shape physically but she taught me to find the motivation in a healthy way - most important for my mind"</p></div>
+            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-700 px-8 lg:px-14 py-12 lg:py-8 lg:pt-6 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt="">  <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Mahesh</p> <p>"Suzi's style of coaching is warm, friendly and always with a smile. She made me think quite deeply and help me re-frame areas of negativity and doubts that really needed it. Overall, I feel much much better and positive about the future now and I am genuinely grateful for the experience. Wow who would have thought a complete stranger could have done this!"</p></div>
+            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-700 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Aliza</p><p> "Suzi made me feel very comfortable and gave me the platform to speak in a non-judgemental way. She listened and reflected and validated my feelings and gave me the opportunity to work things out for myself. I would definitely have further sessions with Suzi in the future"</p></div>
+            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-700 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Diane</p><p> "I've found working with Suzi deeply helpful. Rather than only looking at the past, I found myself unlocking emotional and practical blocks to finding solutions. I became able to pave the way to create real change and left her services feeling more sure about strategies ahead. I felt hopeful and saw results"</p></div>
+            <div class="rounded-xl basis-2/5 mx-4 shadow-lg shadow-gray-500 md:shadow-gray-700 px-8 lg:px-14 py-12 lg:py-8 bg-sky-800 text-white md:text-black md:bg-[#b6e1f2] lg:mx-10 lg:inline-flex flex-col place-content-around lg:leading-7 whitespace-pre-line lg:w-[30vw] "> <img class="absolute -translate-y-12 lg:translate-y-0 lg:-top-1  md:-translate-x-8 lg:-translate-x-24 lg:-rotate-3 mix-blend-overlay h-28 lg:h-1/3 opacity-20 md:opacity-40" src="/images/speechMarks.png" alt=""> <p class="text-center pb-4 lg:pb-0 font-semibold text-xl text-[#b6e1f2] md:text-sky-800">Alicia</p><p> "Suzi's method of training was personally tailored to my needs and lifestyle. She listened to my long term goals and more importantly helped me adjust my expectations so that my progress was manageable. Suzi didnt only help me get in shape physically but she taught me to find the motivation in a healthy way - most important for my mind"</p></div>
 
           </div>
           <div class="hidden reviews-slide lg:animate-[25s_slide_infinite_linear] lg:inline-flex group-hover:animate-pause align-middle">
@@ -283,7 +275,7 @@
               <div class="md:text-left md:w-1/3 text-lg">
                 <p class="text-[#5ab7cf]  text-2xl md:text-3xl pb-4 font-semibold">Contact</p>
                 <div class="flex flex-row space-x-2 justify-center">
-                <p>Email:</p><p><a href="mailto:info@suziwinecoaching.com"> <span class="hover:text-[#5ab7cf] hover:transition-colors hover:duration-600 duration-400">info@suziwinecoaching.com</a></p>
+                <p>Email:</p><p><a href="mailto:info@suziwinecoaching.com"> <span class="hover:text-[#5ab7cf] hover:transition-colors hover:duration-600 duration-400">info@suziwinecoaching.com</span></a></p>
                 </div>
                 <p>Phone: <a class="hover:text-[#5ab7cf] hover:transition-colors hover:duration-600 duration-400" href="tel:+34711001547">+34 711 001 547</a></p>
               </div>
